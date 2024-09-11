@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>get sales</name>
+   <tag></tag>
+   <elementGuidId>7d01cb89-8fd6-435d-a5d5-99a224dd1370</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <katalonVersion>9.6.0</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <path></path>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${host}/sales?startDate=${currentdate}&amp;endDate=${futuredate}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>d9dca08a-5885-4536-b6f1-281b2e98a16e</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.currentdate</defaultValue>
+      <description></description>
+      <id>a52e9386-d6dc-49a1-9956-46a4f7d0ef0a</id>
+      <masked>false</masked>
+      <name>currentdate</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.futuredate</defaultValue>
+      <description></description>
+      <id>e55e62c0-c25a-4026-9bf8-d552676970b9</id>
+      <masked>false</masked>
+      <name>futuredate</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

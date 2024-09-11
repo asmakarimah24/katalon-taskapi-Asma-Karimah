@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>get customer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>455aba6b-306d-4f37-9eea-ce14f9ec7ed7</testCaseGuid>
+</TestCaseEntity>
