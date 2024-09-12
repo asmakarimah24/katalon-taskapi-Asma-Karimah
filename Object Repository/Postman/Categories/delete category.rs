@@ -11,7 +11,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNTc5MzIzMH0._CkeYgCq1cdgqncUKJi93SwnnelMYQesu594ZIObSgs</value>
+            <value>${GlobalVariable.accessToken}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -39,15 +39,15 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNTc5MzIzMH0._CkeYgCq1cdgqncUKJi93SwnnelMYQesu594ZIObSgs</value>
-      <webElementGuid>1bf651ce-e978-446d-ae55-dccf1d419efa</webElementGuid>
+      <value>Bearer ${GlobalVariable.accessToken}</value>
+      <webElementGuid>755bb804-8f9f-4d6e-a601-5fe1bc04c4db</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${host}/categories/delete/086ca5c3-330e-4e93-881e-1d057342b749</restUrl>
+   <restUrl>${host}/categories/delete/c57185d8-0602-43c4-964f-412fd97ae8de</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

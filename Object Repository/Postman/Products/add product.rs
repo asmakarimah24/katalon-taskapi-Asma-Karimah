@@ -11,17 +11,17 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNTc5NDAzN30.S0RdopLZCjBoTu6GK09XazHk6tpWcJmjSPOhDFr9z3Y</value>
+            <value>${GlobalVariable.accessToken}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;category_id\&quot; : \&quot;${categoryId}\&quot;,\n    \&quot;code\&quot;: \&quot;A314ASDDFIER3432\&quot;,\n    \&quot;name\&quot;: \&quot;taro\&quot;,\n    \&quot;price\&quot;: \&quot;3500\&quot;,\n    \&quot;cost\&quot;: \&quot;3000\&quot;,\n    \&quot;stock\&quot;: \&quot;1\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;category_id\&quot; : \&quot;${categoryId}\&quot;,\n    \&quot;code\&quot;: \&quot;A314ASDDFIER3432\&quot;,\n    \&quot;name\&quot;: \&quot;${nama}\&quot;,\n    \&quot;price\&quot;: \&quot;3500\&quot;,\n    \&quot;cost\&quot;: \&quot;3000\&quot;,\n    \&quot;stock\&quot;: \&quot;1\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -29,13 +29,21 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value></value>
+      <webElementGuid>c2319784-80b1-43c8-a130-94a144e033a0</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNTc5NDAzN30.S0RdopLZCjBoTu6GK09XazHk6tpWcJmjSPOhDFr9z3Y</value>
-      <webElementGuid>410fa8ec-5b52-45e3-948d-604d2404db60</webElementGuid>
+      <value>Bearer ${GlobalVariable.accessToken}</value>
+      <webElementGuid>344ce884-a861-4c52-a727-1488d9a10aff</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
@@ -46,7 +54,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.host</defaultValue>
@@ -62,6 +70,13 @@
       <masked>false</masked>
       <name>categoryId</name>
    </variables>
+   <variables>
+      <defaultValue>'Lays'</defaultValue>
+      <description></description>
+      <id>d9c225c8-6ac4-4d6b-b6a6-0a1c465116e5</id>
+      <masked>false</masked>
+      <name>nama</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -74,6 +89,11 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 201)
+
+assertThat(response.getStatusCode()).isEqualTo(201)
+WS.verifyElementPropertyValue(response, 'data.name','Lays' )</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

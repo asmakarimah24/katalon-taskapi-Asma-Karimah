@@ -19,3 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 WS.sendRequestAndVerify(findTestObject('Postman/Customers/add  customer', [('host') : GlobalVariable.host]))
 
+WS.sendRequestAndVerify(findTestObject('Postman/Customers/get customers', [('host') : GlobalVariable.host]))
+

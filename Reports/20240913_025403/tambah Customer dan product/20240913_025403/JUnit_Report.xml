@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="tambah Customer dan product" time="4.963" tests="2" failures="0" errors="0">
+   <testsuite name="tambah Customer dan product" tests="2" failures="0" errors="0" time="4.963" skipped="0" timestamp="13-09-2024T02:54:14" hostname="asma.nasyith - 503-01925.modena.com" id="Test Suites/tambah Customer dan product">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\asma.nasyith\\git\\katalon-taskapi-Asma-Karimah-Nasyith1\\Reports\\20240913_025403\\tambah Customer dan product\\20240913_025403"/>
+         <property name="logFiles" value="C:\\Users\\asma.nasyith\\git\\katalon-taskapi-Asma-Karimah-Nasyith1\\Reports\\20240913_025403\\tambah Customer dan product\\20240913_025403\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="asma.nasyith - 503-01925.modena.com"/>
+         <property name="hostAddress" value="192.168.0.183"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/Customer/Create Customer" time="3.972" classname="Test Cases/Customer/Create Customer" status="PASSED">
+         <system-out><![CDATA[13-09-2024T02:54:15 - [TEST_CASE][PASSED] - Test Cases/Customer/Create Customer: Test Cases/Customer/Create Customer
+
+13-09-2024T02:54:15 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Postman/Customers/add  customer", ["host":host])): Send request and verify the response successfully
+
+13-09-2024T02:54:17 - [MESSAGE][INFO] - HAR: C:\Users\asma.nasyith\git\katalon-taskapi-Asma-Karimah-Nasyith1\Reports\20240913_025403\tambah Customer dan product\20240913_025403\requests\main\0.har
+
+13-09-2024T02:54:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-09-2024T02:54:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-09-2024T02:54:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-09-2024T02:54:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(201): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.name", "Sonia Customer"): Verify element property value successfully
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - responseText = response.getResponseText(): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseText): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - customerId = customerId: null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - customerId = customerId: null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - println("Customer ID yang didapatkan: " + customerId): null
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - Verify response successfully
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Postman/Customers/get customers", ["host":host])): Send request and verify the response successfully
+
+13-09-2024T02:54:18 - [MESSAGE][INFO] - HAR: C:\Users\asma.nasyith\git\katalon-taskapi-Asma-Karimah-Nasyith1\Reports\20240913_025403\tambah Customer dan product\20240913_025403\requests\main\1.har
+
+13-09-2024T02:54:18 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+13-09-2024T02:54:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-09-2024T02:54:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.customers.name[0]", "Sonia Customer"): Verify element property value successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(response.getResponseText()): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - customerId = id: null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - println("ID: " + customerId): null
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify response successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Products/Create Product" time="0.805" classname="Test Cases/Products/Create Product" status="PASSED">
+         <system-out><![CDATA[13-09-2024T02:54:19 - [TEST_CASE][PASSED] - Test Cases/Products/Create Product: Test Cases/Products/Create Product
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Postman/Products/add product", ["host":host, "categoryId":categoryId])): Send request and verify the response successfully
+
+13-09-2024T02:54:19 - [MESSAGE][INFO] - HAR: C:\Users\asma.nasyith\git\katalon-taskapi-Asma-Karimah-Nasyith1\Reports\20240913_025403\tambah Customer dan product\20240913_025403\requests\main\2.har
+
+13-09-2024T02:54:19 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(201): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.name", "Lays"): Verify element property value successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify response successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Postman/Products/get products", ["host":host, "categoryId":categoryId])): Send request and verify the response successfully
+
+13-09-2024T02:54:19 - [MESSAGE][INFO] - HAR: C:\Users\asma.nasyith\git\katalon-taskapi-Asma-Karimah-Nasyith1\Reports\20240913_025403\tambah Customer dan product\20240913_025403\requests\main\3.har
+
+13-09-2024T02:54:19 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-09-2024T02:54:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.products.name[0]", "Lays"): Verify element property value successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Verify response successfully
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-09-2024T02:54:19 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-09-2024T02:54:14 - [TEST_SUITE][PASSED] - tambah Customer dan product: Test Cases/Products/Create Product]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

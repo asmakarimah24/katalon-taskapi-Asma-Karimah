@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequestAndVerify(findTestObject('Postman/Customers/delete customer', [('host') : GlobalVariable.host, ('customerId') : GlobalVariable.customerId]))
+WS.sendRequestAndVerify(findTestObject('Postman/Customers/get customer', [('host') : GlobalVariable.host, ('customerId') : GlobalVariable.customerId]))
 
-WS.sendRequestAndVerify(findTestObject('Postman/Customers/get customers', [('host') : GlobalVariable.host]))
+WS.sendRequestAndVerify(findTestObject('Postman/Customers/delete customer', [('host') : GlobalVariable.host, ('customerId') : GlobalVariable.customerId]))
 

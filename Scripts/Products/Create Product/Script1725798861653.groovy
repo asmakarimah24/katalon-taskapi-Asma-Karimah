@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('Postman/Products/add product', [('host') : GlobalVariable.host, ('categoryId') : GlobalVariable.categoryId]))
+WS.sendRequestAndVerify(findTestObject('Postman/Products/add product', [('host') : GlobalVariable.host, ('categoryId') : GlobalVariable.categoryId]))
 
-WS.sendRequest(findTestObject('Postman/Products/get products', [('host') : GlobalVariable.host, ('categoryId') : GlobalVariable.categoryId]))
+WS.sendRequestAndVerify(findTestObject('Postman/Products/get products', [('host') : GlobalVariable.host, ('categoryId') : GlobalVariable.categoryId]))
 

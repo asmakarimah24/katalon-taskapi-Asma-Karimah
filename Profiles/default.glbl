@@ -26,12 +26,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNTc3ODQwMn0.EJ2K2bfrgDdnO8nqTPB5fjg3s02w2_DhmGAT5Qwu2s0'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNjEzMTMyMX0.vVDQcOQnl7tKRnhOXInPfmnPT-G5VTI0hIXUI_MAFS4'</initValue>
       <name>refreshToken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNjAwNzUxOH0.XWy6gsAmsqJVVn1xuJkzr-h7ysFwmxJh-i_2ZS4wFEk'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMDA4ODc4LTM5ZDEtNGE4NC04MmIxLTY2ODhlNGVhYTg4NiIsImNvbXBhbnlJZCI6IjNhNTQ4YTg4LThmMWUtNGE0ZS05NjAzLTA2NjdhZmZhMjI0OSIsImlhdCI6MTcyNjE0MzQ5OX0.9nA5cdiTH9jEvpFh-4ENwuo8oZ75XxtnepHBKQ0CZw8'</initValue>
       <name>accessToken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,22 +41,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'d85f627c-4e3b-4815-95e1-78651f7e6d0d'</initValue>
       <name>unitId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'086ca5c3-330e-4e93-881e-1d057342b749'</initValue>
+      <initValue>'c57185d8-0602-43c4-964f-412fd97ae8de'</initValue>
       <name>categoryId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'f2b39f4a-ca0f-4310-85d2-e097002e51de'</initValue>
+      <initValue>'5ab37c8d-4e2a-4c00-9e2b-9c15f8e9c557'</initValue>
       <name>customerId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'4e2e0e53-3ff4-4c28-a41c-8c4f7b31ca55'</initValue>
       <name>productId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

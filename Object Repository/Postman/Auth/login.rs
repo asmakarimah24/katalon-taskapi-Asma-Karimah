@@ -65,8 +65,19 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 201)
+
+assertThat(response.getStatusCode()).isEqualTo(201)
+
 def jsonResponse = new JsonSlurper().parseText(response.getResponseText())
 GlobalVariable.accessToken = jsonResponse.data.accessToken
-println(&quot;Acces Token: &quot; + GlobalVariable.accessToken)</verificationScript>
+println(&quot;Acces Token: &quot; + GlobalVariable.accessToken)
+
+
+
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

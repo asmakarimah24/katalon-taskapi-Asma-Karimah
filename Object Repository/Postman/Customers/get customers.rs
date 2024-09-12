@@ -64,9 +64,16 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+WS.verifyResponseStatusCode(response, 200)
+
+assertThat(response.getStatusCode()).isEqualTo(200)
+WS.verifyElementPropertyValue(response, 'data.customers.name[0]','Sonia Customer' )
 
 def jsonResponse = new JsonSlurper().parseText(response.getResponseText())
-GlobalVariable.customerId = jsonResponse.data.customers[1].id
-println(&quot;ID: &quot; + GlobalVariable.customerId)</verificationScript>
+GlobalVariable.customerId = jsonResponse.data.customers[0].id
+println(&quot;ID: &quot; + GlobalVariable.customerId)
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

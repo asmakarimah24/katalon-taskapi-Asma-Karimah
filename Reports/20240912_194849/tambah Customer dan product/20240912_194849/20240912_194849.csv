@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+tambah Customer dan product,,,,13-09-2024 02:48:34,13-09-2024 02:48:42,7.943s,FAILED
+,,,,,,,
+Test Cases/Customer/Create Customer,,,,13-09-2024 02:48:41,13-09-2024 02:48:41,0.404s,FAILED
+"sendRequestAndVerify(findTestObject(""Postman/Customers/add  customer"", [""host"":host]))",,,,13-09-2024 02:48:41,13-09-2024 02:48:41,0.191s,PASSED
+"sendRequestAndVerify(findTestObject(""Postman/Customers/get customer"", [""host"":host, ""customerId"":customerId]))",,,,13-09-2024 02:48:41,13-09-2024 02:48:41,0.197s,FAILED
+,,,,,,,
+Test Cases/Products/Create Product,,,,13-09-2024 02:48:41,13-09-2024 02:48:42,1.013s,PASSED
+"sendRequestAndVerify(findTestObject(""Postman/Products/add product"", [""host"":host, ""categoryId"":categoryId]))",,,,13-09-2024 02:48:41,13-09-2024 02:48:42,0.498s,PASSED
+"sendRequestAndVerify(findTestObject(""Postman/Products/get products"", [""host"":host, ""categoryId"":categoryId]))",,,,13-09-2024 02:48:42,13-09-2024 02:48:42,0.432s,PASSED

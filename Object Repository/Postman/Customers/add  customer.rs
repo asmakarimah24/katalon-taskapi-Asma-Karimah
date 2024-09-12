@@ -64,7 +64,7 @@
       <name>host</name>
    </variables>
    <variables>
-      <defaultValue>'Sonia TAK4'</defaultValue>
+      <defaultValue>'Sonia Customer'</defaultValue>
       <description></description>
       <id>03e6ef77-6e3f-47a8-bf92-5aad6ee71988</id>
       <masked>false</masked>
@@ -84,19 +84,24 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyResponseStatusCode(response, 201)
-
 assertThat(response.getStatusCode()).isEqualTo(201)
+WS.verifyElementPropertyValue(response, 'data.name', 'Sonia Customer')
+// Mengirim request API
 
+// Mengambil body respons sebagai teks
+def responseText = response.getResponseText()
 
-WS.verifyElementPropertyValue(response, 'data.name', 'Sonia TAK4')
-def jsonResponse = new JsonSlurper().parseText(response.getResponseText())
-GlobalVariable.customerId = jsonResponse.data.customerId
-println(&quot;ID: &quot; + GlobalVariable.customerId)
+// Parsing JSON dari respons
+def jsonResponse = new groovy.json.JsonSlurper().parseText(responseText)
 
+// Mengambil nilai 'customerId' dari data JSON
+def customerId = jsonResponse.data.customerId
 
+// Menyimpan nilai customerId ke GlobalVariable
+GlobalVariable.customerId = customerId
 
-
-
+// Output customerId ke log (opsional)
+println &quot;Customer ID yang didapatkan: &quot; + GlobalVariable.customerId
 
 </verificationScript>
    <wsdlAddress></wsdlAddress>
